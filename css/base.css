@@ -1,0 +1,48 @@
+/*--- VARIABLES ---*/
+
+:root {
+  /* Colors */
+  --white: #fff;
+  --black: #000;
+
+
+/* Fonts */
+--light: ;
+--regular: ;
+--medium: ;
+--bold: ;
+
+/* Font sizes */
+--base-size: 16px;
+--h1: 4rem;
+--h2: 2rem;
+--h3: 1.5rem;
+--p: 1rem;
+--p-small: 0.875rem;
+}
+
+/*--- GENERAL ---*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: var(--base-size);
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
