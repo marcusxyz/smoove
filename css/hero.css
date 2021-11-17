@@ -1,3 +1,5 @@
+/*--- Mobile ---*/
+
 .hero section {
   width: 100%;
   height: 100vh;
@@ -31,4 +33,12 @@
 .hero-content p {
   color: var(--white);
   font-size: var(--p-large);
+}
+
+/*--- Desktop ---*/
+
+@media screen and (min-width: 1440px) {
+  .hero-content h1 {
+    font-size: var(--h1);
+  }
 }
