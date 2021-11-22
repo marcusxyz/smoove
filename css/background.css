@@ -9,3 +9,15 @@
 .background img {
   width: 25%;
 }
+
+@media (min-width: 1000px) {
+  .big-green {
+    width: 2000px;
+    height: 2000px;
+    background-color: var(--green);
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top: 1000px;
+    right: -1000px;
+  }
+}
