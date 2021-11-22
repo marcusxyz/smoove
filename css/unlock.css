@@ -1,12 +1,14 @@
+.unlock section {
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+}
+
 .unlock-image-wrapper {
   width: 100%;
   height: 85vh;
   overflow: hidden;
   position: relative;
-}
-
-.unlock-image-wrapper img {
-  object-fit: cover;
 }
 
 .overlay {
