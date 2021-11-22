@@ -1,0 +1,11 @@
+.background {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+
+.background img {
+  width: 25%;
+}

@@ -2,26 +2,26 @@
 
 :root {
   /* Colors */
-  --white: #FFF;
+  --white: #fff;
   --black: #000;
-  --green: #22CF7A;
+  --green: #22cf7a;
+  --background: #1d1d1d;
 
+  /* Fonts */
+  --light: Sora-Light;
+  --regular: Sora-Regular;
+  --medium: Sora-Medium;
+  --semi-bold: Sora-SemiBold;
+  --bold: Sora-Bold;
 
-/* Fonts */
---light: Sora-Light;
---regular: Sora-Regular;
---medium: Sora-Medium;
---semi-bold: Sora-SemiBold;
---bold: Sora-Bold;
-
-/* Font sizes */
---base-size: 16px;
---h1: 6rem;
---h2: 5rem;
---h3: 2.25rem;
---p: 1rem;
---p-small: 0.875rem;
---p-large: 1.125rem;
+  /* Font sizes */
+  --base-size: 16px;
+  --h1: 6rem;
+  --h2: 5rem;
+  --h3: 2.25rem;
+  --p: 1rem;
+  --p-small: 0.875rem;
+  --p-large: 1.125rem;
 }
 
 /* @fontface */
@@ -51,8 +51,6 @@
   src: url(../fonts/Sora-Light.woff2);
 }
 
-
-
 /*--- GENERAL ---*/
 
 * {
@@ -63,7 +61,7 @@
 
 body {
   font-family: var(--regular);
-  background-color: var(--white);
+  background-color: var(--background);
   color: var(--black);
 }
 
