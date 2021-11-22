@@ -19,6 +19,7 @@
 }
 
 .hero-content {
+  width: 100%;
   position: absolute;
   top: 30%;
   left: 0;
@@ -28,7 +29,7 @@
 
 .hero-content h1 {
   color: var(--white);
-  font-size: var(--h2);
+  font-size: 56px;
 }
 
 .hero-content p svg {
@@ -40,7 +41,7 @@
 
 .hero-content p {
   color: var(--white);
-  font-size: var(--h3);
+  font-size: 24px;
 }
 
 .hero-image-wrapper a {
@@ -56,9 +57,9 @@
   position: absolute;
   width: 4rem;
   height: 4rem;
-  bottom: 2rem;
+  bottom: 1rem;
   left: 50%;
-  transform: translate(0, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .hero-image-wrapper .fg {
@@ -76,9 +77,9 @@
 
 @media screen and (min-width: 1440px) {
   .hero-content {
-    top: 50%;
-    left: 10%;
-    transform: translate(-10%, -50%);
+    top: 30%;
+    transform: translate(0, -30%);
+    padding-left: 8rem;
   }
 
   .hero-content h1 {

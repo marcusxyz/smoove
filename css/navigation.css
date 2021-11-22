@@ -2,8 +2,6 @@ nav {
   position: fixed;
   width: 100%;
   height: 80px;
-  top: 0;
-  left: 0;
   background-color: transparent;
   transition: .4s;
   z-index: 999;
@@ -39,6 +37,7 @@ svg {
 
 @media screen and (min-width: 1440px) {
   nav {
+    height: 80px;
     padding: 1.5rem 4rem;
   }
 
