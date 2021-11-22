@@ -7,7 +7,7 @@ nav {
   background-color: transparent;
   transition: .4s;
   z-index: 999;
-  padding: 2rem;
+  padding: 0 1rem;
 
   display: flex;
   justify-content: space-between;
@@ -20,12 +20,37 @@ nav.scroll {
 }
 
 nav a {
-  font-size: var(--p-large);
+  font-size: var(--p);
   color: var(--white);
+  text-transform: uppercase;
+}
+
+nav div {
+  display: none;
 }
 
 svg {
   width: 20px;
   height: 20px;
   fill: var(--white);
+}
+
+/*--- Desktop ---*/
+
+@media screen and (min-width: 1440px) {
+  nav {
+    padding: 1.5rem 4rem;
+  }
+
+  nav svg {
+    display: none;
+  }
+
+  nav div {
+    display: inherit;
+  }
+
+  div li {
+    margin-left: 2rem;
+  }
 }
