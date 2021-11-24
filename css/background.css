@@ -5,27 +5,65 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-right: 10%;
+  padding-right: 12%;
   overflow: hidden;
-  z-index: -20;
+  z-index: -3;
 }
 
-.background img {
+.background-wrapper {
   width: 25%;
+  overflow: hidden;
+}
+.background img {
+  max-width: 300%;
 }
 
 .green-triangle-wrapper {
   width: 100%;
 }
 
+/* Main green triangle */
 .green-triangle {
   background-color: var(--green);
-  width: 50rem;
-  height: 50rem;
+  width: 1474px;
+  height: 1474px;
   transform: rotate(45deg);
   position: absolute;
-  top: 100vh;
-  z-index: -1;
-  right: -25rem;
+  top: 75vh;
+  z-index: -2;
+  right: -1105px;
   mix-blend-mode: difference;
+}
+
+/* Green triangle over hero */
+.green-triangle-wrapper-2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.green-triangle-2 {
+  background-color: var(--green);
+  width: 1474px;
+  height: 1474px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 75vh;
+  z-index: 1;
+  right: -1105px;
+}
+
+/* Black triangle for correct blending */
+.black-triangle-wrapper {
+  width: 100%;
+}
+
+.black-triangle {
+  background-color: black;
+  width: 1474px;
+  height: 1474px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 75vh;
+  z-index: -5;
+  right: -1105px;
 }
