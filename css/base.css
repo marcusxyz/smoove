@@ -63,6 +63,7 @@ body {
   font-family: var(--regular);
   background-color: var(--background);
   color: var(--black);
+  overflow-x: hidden;
 }
 
 a {
