@@ -6,9 +6,10 @@ section.unlock {
   margin-top: 0rem;
 }
 
-.section-title {
-  margin-bottom: 0rem;
+.section-title-tackle {
+  width: 50%;
   z-index: 5;
+  margin-bottom: -8rem;
 }
 
 .unlock-image-wrapper {
