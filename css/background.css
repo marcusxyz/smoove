@@ -1,3 +1,5 @@
+/* MOBILE */
+
 .background {
   position: fixed;
   width: 100%;
@@ -25,16 +27,3 @@
   z-index: 1;
   right: -25rem;
 }
-
-/* @media (min-width: 1000px) {
-  .big-green {
-    width: 2000px;
-    height: 2000px;
-    background-color: var(--green);
-    position: initial;
-    transform: rotate(45deg);
-    margin-top: 1000px;
-    right: -1000px;
-    overflow: hidden;
-  }
-} */

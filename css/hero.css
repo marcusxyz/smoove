@@ -1,4 +1,7 @@
 /*--- Mobile ---*/
+.heading {
+  width: 75%;
+}
 
 .hero section {
   width: 100%;
@@ -27,6 +30,8 @@
   left: 0;
   transform: translate(0, -30%);
   padding: 0 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-content h1 {
@@ -60,7 +65,7 @@
 }
 
 .hero-image-wrapper .fg {
-  fill:var(--white);
+  fill: var(--white);
   margin-left: -0.5rem;
   transition: all 0.15s ease-out;
 }
@@ -68,7 +73,6 @@
 .hero-image-wrapper .bg {
   fill: var(--green);
 }
-
 
 /*--- Desktop ---*/
 
