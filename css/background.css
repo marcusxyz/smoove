@@ -4,20 +4,40 @@
   display: flex;
   justify-content: flex-end;
   padding-right: 10%;
+  overflow: hidden;
 }
 
 .background img {
   width: 25%;
 }
 
-@media (min-width: 1000px) {
+body {
+  overflow-x: hidden;
+}
+
+.green-triangle-wrapper {
+  width: 100%;
+}
+
+.green-triangle {
+  background-color: green;
+  width: 1000px;
+  height: 1000px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 100vh;
+  z-index: 1;
+}
+
+/* @media (min-width: 1000px) {
   .big-green {
     width: 2000px;
     height: 2000px;
     background-color: var(--green);
-    position: absolute;
+    position: initial;
     transform: rotate(45deg);
     margin-top: 1000px;
     right: -1000px;
+    overflow: hidden;
   }
-}
+} */
