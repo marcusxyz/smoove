@@ -11,22 +11,19 @@
   width: 25%;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .green-triangle-wrapper {
   width: 100%;
 }
 
 .green-triangle {
-  background-color: green;
-  width: 1000px;
-  height: 1000px;
+  background-color: var(--green);
+  width: 50rem;
+  height: 50rem;
   transform: rotate(45deg);
   position: absolute;
   top: 100vh;
   z-index: 1;
+  right: -25rem;
 }
 
 /* @media (min-width: 1000px) {
