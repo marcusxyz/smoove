@@ -1,13 +1,15 @@
-.specification {
+/* .specification {
+  width: 100%;
+  height: 100%;
   margin-top: 5rem;
 }
-.spec-wrapper {
+.spec-container {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  height: 947px;
   background-image: url('../images/specs-car.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 
 .spec-heading {
@@ -15,6 +17,45 @@
   top: 50px;
   left: 5%;
   font-size: 30px;
+} */
+
+.specification {
+  width: 100%;
+  height: auto;
+}
+
+.spec-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.specification img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.spec-content {
+  width: 100%;
+}
+
+.spec-title {
+  position: absolute;
+  padding: 0 1.5rem;
+  top: 4rem;
+  left: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spec-title h3 {
+  font-size: 32px;
 }
 
 .arrow-button-specs {
@@ -64,9 +105,14 @@
 }
 
 /* -- SPECS -- */
-.specs-item-container-1 {
+.specs-item-container-desktop {
+  display: none;
+  position: absolute;
+  bottom: 4rem;
+  left: 40%;
+  transform: translateX(-40%);
   margin: 1.5rem;
-  width: 100%;
+  width: 60%;
 }
 .specs-item {
   width: 100%;
@@ -82,15 +128,46 @@
 }
 
 .specs-item .part-2 {
-  padding-right: 30%;
+  padding-right: 40%;
+}
+
+.specs-item-container-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem 4rem 1.5rem;
 }
 @media screen and (min-width: 1040px) {
-  .spec-wrapper img {
-    height: 90vh;
+
+  .specification {
+    width: 100%;
+    height: 59rem;
   }
 
-  .specs-item-container-1 {
+  .spec-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 59rem;
+  }
+
+  .spec-title {
+    position: absolute;
+    top: 12rem;
+    left: 12rem;
+    padding: 0 1.5rem;
+
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .specs-item-container-desktop {
+    display: flex;
+  }
+
+  .specs-item-container-2 {
+    display: none;
   }
 
   /* .specs-item-container-2 {
