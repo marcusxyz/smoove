@@ -1,0 +1,109 @@
+.specification {
+  margin-top: 5rem;
+}
+.spec-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/specs-car.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.spec-heading {
+  position: absolute;
+  top: 50px;
+  left: 5%;
+  font-size: 30px;
+}
+
+.arrow-button-specs {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: -5rem;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background: none;
+  justify-content: center;
+  transform: rotate(270deg) scale(0.7);
+}
+
+.arrow-button-specs div {
+  position: relative;
+  width: 4rem;
+  height: 5rem;
+}
+
+.arrow-button-specs .fg,
+.arrow-button-specs .bg {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+}
+
+.arrow-button-specs .fg {
+  fill: var(--white);
+  transition: top 0.2s ease-in-out;
+  top: 1rem;
+}
+
+.arrow-button-specs .bg {
+  fill: none;
+  stroke: var(--white);
+  top: 0;
+  transform: scale(0.85);
+}
+
+.arrow-button-specs:hover .fg {
+  top: 0;
+  transform: scale(0.85);
+}
+
+/* -- SPECS -- */
+.specs-item-container-1 {
+  margin: 1.5rem;
+  width: 100%;
+}
+.specs-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.specs-item .part-1 {
+  display: inline-block;
+  border: 2px solid white;
+  padding: 1rem;
+}
+
+.specs-item .part-2 {
+  padding-right: 30%;
+}
+@media screen and (min-width: 1040px) {
+  .spec-wrapper img {
+    height: 90vh;
+  }
+
+  .specs-item-container-1 {
+    display: flex;
+  }
+
+  /* .specs-item-container-2 {
+    width: 100%;
+    display: flex;
+  } */
+
+  .specs-item {
+    flex-direction: column;
+  }
+
+  .specs-item .part-2 {
+    padding-right: 0;
+    padding-top: 0.5rem;
+  }
+}
