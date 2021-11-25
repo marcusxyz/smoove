@@ -100,11 +100,9 @@
 }
 
 .future-img img {
-  width: 100%;
-  min-height: 375px;
-  transform: scale(1);
+  height: 100%;
   object-fit: cover;
-  object-position: left;
+  object-position: right;
 }
 
 .submit {
