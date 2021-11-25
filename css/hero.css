@@ -1,7 +1,4 @@
 /*--- Mobile ---*/
-.heading {
-  width: 75%;
-}
 
 .hero section {
   width: 100%;
@@ -31,17 +28,13 @@
   transform: translate(0, -30%);
   padding: 0 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.hero-content h1 {
-  color: var(--white);
-  font-size: 56px;
-}
-
-.hero-content p {
-  color: var(--white);
-  font-size: 24px;
+.heading {
+  width: 17rem;
+  height: 13rem;
 }
 
  .arrow-button {
@@ -98,11 +91,8 @@ a.arrow-button:hover .fg {
     padding-left: 4rem;
   }
 
-  .hero-content h1 {
-    font-size: var(--h1);
-  }
-
-  .hero-content p {
-    font-size: 40px;
+  .heading {
+    width: 38rem;
+    height: 29rem;
   }
 }

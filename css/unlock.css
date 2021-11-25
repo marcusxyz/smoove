@@ -1,4 +1,4 @@
-section.unlock {
+/* section.unlock {
   width: 100%;
   height: 53rem;
   overflow: hidden;
@@ -44,25 +44,33 @@ section.unlock {
 
 .overlay {
   display: none;
+} */
+
+/*-- ^^PREVIOUS CODE^^ --*/
+
+.section-title {
+  position: relative;
+  height: 103px;
+  margin: 2rem 1rem 0 1rem;
 }
 
-.unlock-info-box {
-  position: initial;
-  color: var(--white);
-  width: 40%;
-  right: 0;
+.section-title-tackle,
+.section-title-anyroad {
+  position: absolute;
+}
+
+.section-title-tackle {
+  width: 60%;
+  z-index: 5;
   top: 50%;
-  transform: translate(0, -50%);
-  padding: 30px;
-  z-index: 1;
+  transform: translateY(-50%);
 }
 
-.unlock-info-box p {
-  margin-bottom: 2rem;
-}
-
-.unlock-info-box h3 {
-  margin-bottom: 2rem;
+.section-title-anyroad {
+  width: 50%;
+  bottom: 0;
+  left: 60%;
+  transform: translateX(-60%);
 }
 
 .unlock-container {
@@ -72,6 +80,7 @@ section.unlock {
   padding-right: 0;
   display: flex;
   flex-direction: column;
+  z-index: -999;
 }
 
 .unlock-content {
@@ -83,11 +92,12 @@ section.unlock {
 
 .unlock-content h3 {
   color: var(--white);
+  padding-bottom: 2rem;
 }
 
 .unlock-content p {
   color: var(--white);
-  padding: 1rem 0;
+  padding-bottom: 1.5rem;
   line-height: 1.8rem;
 }
 
@@ -106,6 +116,15 @@ section.unlock {
 }
 
 @media screen and (min-width: 1440px) {
+  .section-title {
+    margin: 6.75rem 1rem 0 1rem;
+  }
+
+  .section-title-tackle,
+  .section-title-anyroad {
+    width: 40%;
+  }
+
   .unlock-container {
     display: flex;
     flex-direction: row;
@@ -124,38 +143,5 @@ section.unlock {
     margin-top: 0;
     display: flex;
     align-items: flex-start;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .section-title {
-    margin: 6.75rem 1rem 0 1rem;
-  }
-
-  .section-title-tackle,
-  .section-title-anyroad {
-    width: 40%;
-  }
-
-  .overlay {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 100vh;
-    width: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: scale(1.2) rotate(10deg);
-  }
-
-  .unlock-info-box {
-    position: absolute;
-    color: var(--white);
-    width: 40%;
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    padding: 30px;
-    z-index: 1;
   }
 }
