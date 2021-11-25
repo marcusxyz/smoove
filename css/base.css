@@ -20,6 +20,7 @@
   --h1: 6rem;
   --h2: 5rem;
   --h3: 2.25rem;
+  --h4: 2rem;
   --p: 1rem;
   --p-small: 0.875rem;
   --p-large: 1.125rem;
@@ -95,6 +96,11 @@ h2 {
 h3 {
   font-size: var(--h3);
   text-transform: uppercase;
+}
+
+h4 {
+  font-size: var(--h4);
+  line-height: 1.25;
 }
 
 /*- Section -*/
