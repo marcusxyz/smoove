@@ -115,7 +115,7 @@
   object-position: left;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1040px) {
   .section-title {
     margin: 6.75rem 1rem 0 1rem;
   }
