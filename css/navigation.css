@@ -1,7 +1,7 @@
 nav {
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 70px;
   background-color: transparent;
   transition: 0.4s;
   z-index: 999;
@@ -13,6 +13,9 @@ nav {
   vertical-align: middle;
 }
 
+.shorter-nav {
+  height: 50px;
+}
 nav.scroll {
   background-color: var(--black);
 }
