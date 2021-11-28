@@ -6,11 +6,13 @@
 }
 
 .section-title-tackle,
-.section-title-anyroad {
+.section-title-anyroad,
+.section-title-store {
   position: absolute;
 }
 
-.section-title-tackle {
+.section-title-tackle,
+.section-title-store {
   width: 60%;
   z-index: 5;
   top: 50%;
@@ -139,7 +141,8 @@ input:focus {
   }
 
   .section-title-tackle,
-  .section-title-anyroad {
+  .section-title-anyroad,
+  .section-title-store {
     width: 40%;
   }
 
