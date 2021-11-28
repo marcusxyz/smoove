@@ -103,7 +103,19 @@
               </svg>
             </div>
           </a>
-          <img src="images/hero-front-min.webp" alt="">
+          <img
+            src="/images/hero-1050w.webp"
+            srcset="
+              /images/hero-750w.webp 750w,
+              /images/hero-1050w.webp 1050w
+            "
+            sizes="
+              (min-width: 1050px) 1050px,
+              (min-width: 750px) 750px, 100vw
+              "
+            alt="My perfect alt text"
+          />
+          <!-- <img src="images/hero-front-min.webp" alt=""> -->
         </div>
       </section>
       <!-- Anchor point -->
