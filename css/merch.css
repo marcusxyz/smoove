@@ -134,7 +134,7 @@
     z-index: 5;
   }
 
-  .section-title {
+  .triangle-wrapper .section-title {
     display: none;
   }
 
@@ -186,6 +186,6 @@
   .merch-content h4 {
     width: 80%;
     color: var(--white);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
