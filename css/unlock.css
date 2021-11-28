@@ -65,13 +65,6 @@
   line-height: 1.8rem;
 }
 
-.primary-button {
-  display: inline-block;
-  background-color: var(--orange);
-  color: var(--white);
-  padding: 0.5rem 1rem;
-}
-
 .unlock-img img,
 .future-img img {
   width: 100%;
@@ -121,8 +114,8 @@
 }
 
 .submit input {
-  margin-right: 1.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
   width: 100%;
   border: none;
   border-radius: 0;
@@ -130,6 +123,11 @@
 
 input:focus {
   outline-color: var(--green);
+}
+
+.submit .primary-button {
+  width: 100%;
+  text-align: center;
 }
 
 /* DESKTOP */
@@ -175,15 +173,29 @@ input:focus {
   }
 
   .unlock-content h3,
-  .future-content h3 {
+  .future-content h4 {
     padding-bottom: 2rem;
+  }
+
+  .future-content h4 {
+    width: 80%;
+  }
+
+  .future-content p {
+    width: 80%;
+    margin-bottom: 1rem;
   }
 
   .submit input {
     margin-right: 1.5rem;
-    padding: 0.5rem;
+    margin-bottom: 0;
+    padding: 1rem;
     width: 60%;
     border: none;
     border-radius: 0;
+  }
+
+  .submit .primary-button {
+    width: auto;
   }
 }

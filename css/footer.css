@@ -35,7 +35,13 @@ footer div h4 {
 
 #footer-text p {
   font-size: var(--p);
+  font-weight: var(--light);
   margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+footer svg {
+  margin-right: 1.5rem;
 }
 
 footer button {
@@ -56,7 +62,7 @@ footer button {
 
   footer img {
     width: 100%;
-    top: -260%;
+    top: -220%;
     position: absolute;
     z-index: -10;
     transform: scale(1);
@@ -72,9 +78,5 @@ footer button {
     font-size: var(--h1);
     font-family: var(--bold);
     color: white;
-  }
-
-  footer svg {
-    margin-right: 2rem;
   }
 }

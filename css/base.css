@@ -108,3 +108,12 @@ h4 {
 section {
   width: 100%;
 }
+
+/* button */
+
+.primary-button {
+  display: inline-block;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 1rem 1.5rem;
+}

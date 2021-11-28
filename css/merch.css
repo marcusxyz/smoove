@@ -1,5 +1,5 @@
 .triangle-wrapper {
-  height: 85rem;
+  height: 90rem;
   overflow: hidden;
 }
 
@@ -23,13 +23,6 @@
   width: 100%;
   color: var(--white);
   margin-bottom: 1.5rem;
-}
-
-.primary-button {
-  display: inline-block;
-  background-color: var(--orange);
-  color: var(--white);
-  padding: 0.5rem 1rem;
 }
 
 .merch-img img {
