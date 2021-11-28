@@ -5,24 +5,28 @@ footer {
 .footer-container {
   position: relative;
   width: 110%;
+  height: 500px;
   z-index: -2;
 }
+
 footer img {
   width: 100%;
-  top: 1rem;
+  top: -50%;
+  transform: scale(1.5);
   position: absolute;
   z-index: -2;
 }
 
 footer div h4 {
   margin-bottom: 1rem;
+  font-size: var(--h2);
   font-family: var(--bold);
   color: white;
 }
 
 #footer-text {
   position: absolute;
-  top: 10rem;
+  top: 0;
   margin: 2rem;
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -47,7 +51,27 @@ footer button {
     width: 100%;
   }
 
+  footer img {
+    width: 100%;
+    top: -200%;
+    position: absolute;
+    z-index: -2;
+    transform: scale(1);
+  }
+
   #footer-text {
-    top: 50rem;
+    top: 15rem;
+    left: 6rem;
+  }
+
+  footer div h4 {
+    margin-bottom: 1rem;
+    font-size: var(--h1);
+    font-family: var(--bold);
+    color: white;
+  }
+
+  footer svg {
+    margin-right: 2rem;
   }
 }
