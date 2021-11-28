@@ -137,10 +137,11 @@
   padding: 1.5rem 1.5rem 4rem 1.5rem;
 }
 @media screen and (min-width: 1040px) {
-
   .specification {
     width: 100%;
     height: 59rem;
+    margin-top: 5rem;
+    overflow: hidden;
   }
 
   .spec-image-wrapper {

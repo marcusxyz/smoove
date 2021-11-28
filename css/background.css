@@ -17,12 +17,10 @@
 .background img {
   max-width: 300%;
 }
-
+/* Main green triangle */
 .green-triangle-wrapper {
   width: 100%;
 }
-
-/* Main green triangle */
 .green-triangle {
   background-color: var(--green);
   width: 1474px;

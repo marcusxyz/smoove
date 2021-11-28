@@ -1,0 +1,53 @@
+footer {
+  width: 100%;
+  z-index: -2;
+}
+.footer-container {
+  position: relative;
+  width: 110%;
+  z-index: -2;
+}
+footer img {
+  width: 100%;
+  top: 1rem;
+  position: absolute;
+  z-index: -2;
+}
+
+footer div h4 {
+  margin-bottom: 1rem;
+  font-family: var(--bold);
+  color: white;
+}
+
+#footer-text {
+  position: absolute;
+  top: 10rem;
+  margin: 2rem;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+#footer-text p {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+footer button {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+@media (min-width: 1040px) {
+  .footer-container {
+    width: 100%;
+  }
+
+  #footer-text {
+    top: 50rem;
+  }
+}
