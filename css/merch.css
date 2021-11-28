@@ -44,6 +44,85 @@
   display: none;
 }
 
+.img-container {
+  position: relative;
+}
+
+.button-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.arrow-button-merch {
+  display: block;
+  cursor: pointer;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background: none;
+  z-index: 1;
+}
+
+.arrow-button-merch.left {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 40%;
+  left: 2rem;
+}
+
+.arrow-button-merch.right {
+  position: absolute;
+  transform: rotate(-90deg);
+  right: 2rem;
+}
+
+.arrow-button-merch .fg,
+.arrow-button-merch .bg {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+}
+
+.arrow-button-merch .fg {
+  fill: var(--white);
+  transition: top 0.2s ease-in-out;
+  top: 1rem;
+}
+
+.arrow-button-merch .bg {
+  fill: none;
+  stroke: var(--white);
+  top: 0;
+  transform: scale(0.85);
+}
+
+.arrow-button-specs:hover .fg {
+  top: 0;
+  transform: scale(0.85);
+}
+
+.arrow-button-merch .fg {
+  fill: var(--white);
+  transition: top 0.2s ease-in-out;
+  top: 1rem;
+}
+
+.arrow-button-merch .bg {
+  fill: none;
+  stroke: var(--white);
+  top: 0;
+  transform: scale(0.85);
+}
+
+.arrow-button-merch:hover .fg {
+  top: 0;
+  transform: scale(0.85);
+}
+
 /* DESKTOP */
 
 @media screen and (min-width: 1040px) {

@@ -34,7 +34,7 @@ footer div h4 {
 }
 
 #footer-text p {
-  font-size: 12px;
+  font-size: var(--p);
   margin-bottom: 1rem;
 }
 
@@ -46,6 +46,9 @@ footer button {
   padding: 1rem;
   margin-top: 1rem;
 }
+
+/*--- DESKTOP ---*/
+
 @media (min-width: 1040px) {
   .footer-container {
     width: 100%;
@@ -53,9 +56,9 @@ footer button {
 
   footer img {
     width: 100%;
-    top: -200%;
+    top: -260%;
     position: absolute;
-    z-index: -2;
+    z-index: -10;
     transform: scale(1);
   }
 
