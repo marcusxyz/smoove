@@ -34,7 +34,6 @@
 
 .merch-img img {
   width: 100%;
-  height: 24rem;
   transform: scale(1);
   object-fit: cover;
   object-position: center;
@@ -70,7 +69,7 @@
 .arrow-button-merch.left {
   position: absolute;
   transform: rotate(90deg);
-  top: 40%;
+  top: 35%;
   left: 2rem;
 }
 
@@ -140,7 +139,7 @@
 
   .merch-content img {
     display: block;
-    width: 100%;
+    width: 60%;
     margin-bottom: 2rem;
   }
 
@@ -187,5 +186,12 @@
     width: 80%;
     color: var(--white);
     margin-bottom: 2rem;
+  }
+
+  .arrow-button-merch.left {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 40%;
+    left: 2rem;
   }
 }
