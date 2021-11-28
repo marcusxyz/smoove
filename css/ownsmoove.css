@@ -54,8 +54,8 @@
 
   .ownsmoove-content {
     width: 50%;
-    margin: 0;
-    padding: 3rem;
+    margin: auto;
+    padding: 6rem;
     background-color: rgba(19, 24, 19, 0.6);
   }
 
