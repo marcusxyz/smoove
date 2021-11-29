@@ -61,6 +61,10 @@
   font-size: var(--base-size);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--regular);
   background-color: var(--background);
