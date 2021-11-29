@@ -64,14 +64,15 @@
   }
 
   .ownsmoove-content {
-    width: 50%;
+    width: 40%;
     margin: auto;
-    padding: 6rem;
+    padding: 3rem;
+    padding-left: 5rem;
     background-color: rgba(19, 24, 19, 0.6);
   }
 
   .ownsmoove-img {
-    width: 50%;
+    width: 60%;
     min-height: 375px;
     margin: 0;
   }
