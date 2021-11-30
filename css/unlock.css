@@ -172,6 +172,34 @@ input:focus {
     align-items: flex-start;
   }
 
+  .unlock-img {
+    height: 80vh;
+  }
+  .unlock-content {
+    position: absolute;
+    width: 50%;
+    height: 80vh;
+    right: -1000px;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation-name: show-content;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+
+  /* .unlock-content-animation {
+    right: 0px;
+  } */
+
+  @keyframes show-content {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1000px);
+    }
+  }
+
   .unlock-content h3,
   .future-content h4 {
     padding-bottom: 2rem;
