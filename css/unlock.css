@@ -181,15 +181,14 @@ input:focus {
     height: 80vh;
     right: -1000px;
     background-color: rgba(0, 0, 0, 0.8);
+  }
+  .unlock-content-animation {
     animation-name: show-content;
     animation-duration: 1s;
-    animation-delay: 3s;
+    animation-delay: 0.2s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
   }
-
-  /* .unlock-content-animation {
-    right: 0px;
-  } */
 
   @keyframes show-content {
     0% {
