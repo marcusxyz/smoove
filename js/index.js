@@ -6,6 +6,21 @@ window.onscroll = () => {
   else nav.className = 'scroll shorter-nav';
 };
 
+// Progress bar
+
+const bodyTag = document.querySelector('body');
+const progressTag = document.querySelector('div.progress');
+
+document.addEventListener("scroll", function () {
+  const currentDistance = window.pageYOffset;
+  const pageHeight = bodyTag.getBoundingClientRect().height;
+	const totalDistance = pageHeight - window.innerHeight;
+
+  const percentage = currentDistance / totalDistance;
+
+  progressTag.style.width = `${100 * percentage}%`;
+})
+
 // Anchor smooth scrolling
 
 (function() {
@@ -35,3 +50,26 @@ function scrollAnchors(e, respond = null) {
 		}
 	}, 100);
 }
+
+
+// // Setting up parallax
+
+// const sections = document.querySelectorAll('section');
+
+// document.addEventListener('scroll', function () {
+//   const topViewport = window.pageYOffset;
+//   const midViewport = topViewport + (window.innerHeight / 20);
+
+//   sections.forEach(section => {
+//     const topSection = section.offsetTop;
+//     const midSection = topSection + (section.offsetHeight / 20);
+
+//     const distanceToSection = midViewport - midSection;
+
+//     const tag = document.querySelector('.section-title .tag')
+//     const speed = parseInt(tag.getAttribute('data-parallax'))
+
+//     tag.style.transform = `translate(0, ${distanceToSection / speed}px)`
+
+//   });
+// })

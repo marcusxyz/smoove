@@ -69,6 +69,10 @@ body {
   font-family: var(--regular);
   background-color: var(--background);
   color: var(--white);
+}
+
+main {
+  position: relative;
   overflow-x: hidden;
 }
 
