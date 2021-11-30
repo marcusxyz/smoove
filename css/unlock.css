@@ -182,10 +182,17 @@ input:focus {
     right: -1000px;
     background-color: rgba(0, 0, 0, 0.8);
   }
-  .unlock-content-animation {
+  .left-to-right {
     animation-name: show-content;
-    animation-duration: 1s;
-    /* animation-delay: 0.2s; */
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  .left-to-right-2 {
+    animation-name: show-content;
+    animation-duration: 0.8s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
   }
