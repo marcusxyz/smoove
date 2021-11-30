@@ -23,8 +23,6 @@
   object-position: 70%;
 }
 
-
-
 .hero-content {
   width: 100%;
   position: absolute;
@@ -42,7 +40,7 @@
   height: 13rem;
 }
 
- .arrow-button {
+.arrow-button {
   display: block;
   cursor: pointer;
   position: absolute;
@@ -78,7 +76,7 @@
 .arrow-button .bg {
   fill: none;
   stroke: var(--white);
-  top:0;
+  top: 0;
   transform: scale(0.85);
 }
 
@@ -89,7 +87,7 @@ a.arrow-button:hover .fg {
 
 /*--- Desktop ---*/
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1040px) {
   .hero-content {
     top: 40%;
     transform: translate(0, -40%);
