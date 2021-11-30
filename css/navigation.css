@@ -32,9 +32,13 @@ nav.scroll {
   background-color: var(--background);
 }
 
+nav.scroll a {
+  color: var(--white);
+}
+
 nav a {
   font-size: var(--p);
-  color: var(--white);
+  color: var(--black);
   text-transform: uppercase;
 }
 
