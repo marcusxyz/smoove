@@ -1,24 +1,3 @@
-/* .specification {
-  width: 100%;
-  height: 100%;
-  margin-top: 5rem;
-}
-.spec-container {
-  position: relative;
-  height: 947px;
-  background-image: url('../images/specs-car.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-}
-
-.spec-heading {
-  position: absolute;
-  top: 50px;
-  left: 5%;
-  font-size: 30px;
-} */
-
 .specification {
   width: 100%;
 }
@@ -32,9 +11,9 @@
 
 .specification img {
   width: 100%;
-  height: 80%;
+  height: 16rem;
   object-fit: cover;
-  object-position: bottom;
+  object-position: top;
 }
 
 .spec-content {
@@ -135,6 +114,9 @@
   flex-direction: column;
   padding: 1.5rem 1.5rem 4rem 1.5rem;
 }
+
+/*--- Desktop ---*/
+
 @media screen and (min-width: 1040px) {
   .specification {
     width: 100%;
@@ -150,9 +132,16 @@
     height: 59rem;
   }
 
+  .specification img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
   .spec-title {
     position: absolute;
-    top: 6rem;
+    top: 8rem;
     left: 12rem;
     padding: 0 1.5rem;
 
@@ -164,16 +153,12 @@
 
   .specs-item-container-desktop {
     display: flex;
+    bottom: 6rem;
   }
 
   .specs-item-container-2 {
     display: none;
   }
-
-  /* .specs-item-container-2 {
-    width: 100%;
-    display: flex;
-  } */
 
   .specs-item {
     flex-direction: column;

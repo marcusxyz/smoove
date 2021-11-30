@@ -49,7 +49,7 @@
 .unlock-content {
   background-color: var(--background);
   padding: 3rem 1.5rem;
-  min-height: 375px;
+  min-height: auto;
   margin: 2rem 1rem;
 }
 
@@ -68,8 +68,8 @@
 .unlock-img img,
 .future-img img {
   width: 100%;
-  min-height: 375px;
-  transform: scale(1);
+  height: 343px;
+  overflow: hidden;
   object-fit: cover;
   object-position: left;
 }
@@ -162,6 +162,11 @@ input:focus {
     flex: 50%;
   }
 
+  .unlock-img img{
+    height: 848px;
+    object-position: bottom;
+  }
+
   .unlock-content,
   .future-content {
     flex-direction: column;
@@ -172,16 +177,14 @@ input:focus {
     align-items: flex-start;
   }
 
-  .unlock-img {
-    height: 80vh;
-  }
   .unlock-content {
     position: absolute;
     width: 50%;
-    height: 80vh;
+    min-height: 848px;
     right: -1000px;
     background-color: rgba(0, 0, 0, 0.8);
   }
+
   .unlock-content-animation {
     animation-name: show-content;
     animation-duration: 1s;

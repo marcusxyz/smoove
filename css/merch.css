@@ -27,7 +27,6 @@
 
 .merch-img img {
   width: 100%;
-  transform: scale(1);
   object-fit: cover;
   object-position: center;
 }
@@ -197,7 +196,6 @@
   }
 
   .merch-img img {
-    height: auto;
     object-fit: cover;
     object-position: center;
   }

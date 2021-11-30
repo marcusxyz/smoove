@@ -36,6 +36,10 @@ nav.scroll a {
   color: var(--white);
 }
 
+nav.scroll svg {
+  fill: var(--white);
+}
+
 nav a {
   font-size: var(--p);
   color: var(--black);
@@ -47,9 +51,9 @@ nav div {
 }
 
 nav svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--white);
+  width: 1.5rem;
+  height: 1.5rem;
+  /* fill: var(--black); */
 }
 
 /*--- Desktop ---*/
