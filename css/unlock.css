@@ -191,13 +191,16 @@ input:focus {
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
   }
-
+  .left-to-right,
   .left-to-right-2 {
     animation-name: show-content;
     animation-duration: 0.8s;
-    animation-delay: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+  }
+
+  .left-to-right-2 {
+    animation-delay: 0.2s;
   }
 
   @keyframes show-content {

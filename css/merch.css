@@ -196,6 +196,8 @@
   }
 
   .merch-img img {
+    max-width: 40rem;
+    max-height: 40rem;
     object-fit: cover;
     object-position: center;
   }
