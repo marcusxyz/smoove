@@ -72,6 +72,29 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+  }
+
+  .ownsmoove-content #first-h3 {
+    position: absolute;
+    width: 85%;
+    padding-right: 3rem;
+    right: -1000px;
+    color: var(--white);
+  }
+
+  .ownsmoove-content #first-p {
+    position: absolute;
+    width: 85%;
+    right: -1000px;
+    padding-right: 3rem;
+    top: 9rem;
+    color: var(--white);
+    padding-bottom: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .right-to-left {
   }
 
   .ownsmoove-img {

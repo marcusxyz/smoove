@@ -9,17 +9,14 @@ window.onscroll = () => {
 // Slide in unlock-content
 let scrollpos = window.scrollY;
 const unlock = document.querySelector('.unlock-content');
-const unlock_height = unlock.offsetHeight;
 
-const add_class_on_scroll = () =>
-  unlock.classList.add('unlock-content-animation');
-const remove_class_on_scroll = () =>
-  unlock.classList.remove('unlock-content-animation');
+const add_class_on_scroll = () => unlock.classList.add('left-to-right');
+const remove_class_on_scroll = () => unlock.classList.remove('left-to-right');
 
 window.addEventListener('scroll', function () {
   scrollpos = window.scrollY;
 
-  if (scrollpos >= 40) {
+  if (scrollpos >= 200) {
     add_class_on_scroll();
   } else {
     remove_class_on_scroll();
@@ -31,6 +28,29 @@ window.addEventListener('scroll', function () {
 
   console.log(scrollpos);
 });
+
+// Slide in NEVER TRAVEL ALONE
+const neverTravelAlone = document.querySelector('#first-h3');
+const neverTravelAloneP = document.querySelector('#first-p');
+const addTravelSlide = () => neverTravelAlone.classList.add('left-to-right');
+const addTravelSlideP = () =>
+  neverTravelAloneP.classList.add('left-to-right-2');
+const removeTravelSlide = () =>
+  neverTravelAlone.classList.remove('left-to-right');
+const removeTravelSlideP = () =>
+  neverTravelAloneP.classList.remove('left-to-right-2');
+
+window.addEventListener('scroll', function () {
+  scrollpos = window.scrollY;
+  if (scrollpos >= 1000) {
+    addTravelSlide();
+    addTravelSlideP();
+  } else {
+    removeTravelSlide();
+    removeTravelSlideP();
+  }
+});
+
 // Progress bar
 
 const bodyTag = document.querySelector('body');
