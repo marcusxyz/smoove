@@ -19,7 +19,7 @@ footer img {
 
 footer div h4 {
   margin-bottom: 1rem;
-  font-size: var(--h2);
+  font-size: var(--h3);
   font-family: var(--bold);
   color: white;
 }
@@ -58,6 +58,7 @@ footer button {
 @media (min-width: 1040px) {
   .footer-container {
     width: 100%;
+    margin-top: 4rem;
   }
 
   footer img {
