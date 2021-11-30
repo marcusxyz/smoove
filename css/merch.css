@@ -1,5 +1,5 @@
 .triangle-wrapper {
-  height: 90rem;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -118,6 +118,10 @@
 /* DESKTOP */
 
 @media screen and (min-width: 1040px) {
+  .triangle-wrapper {
+    height: 95rem;
+  }
+
   .merch-container {
     display: flex;
     flex-direction: row-reverse;
