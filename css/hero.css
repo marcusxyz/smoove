@@ -19,6 +19,7 @@
   object-fit: cover;
 }
 
+/* Center MC on mobile screen */
 .hero img {
   object-position: 70%;
 }
@@ -31,58 +32,14 @@
   transform: translate(0, -30%);
   padding: 0 1.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
 }
 
+/* Adjust heading size here */
 .heading {
   width: 17rem;
   height: 13rem;
-}
-
-.arrow-button {
-  display: block;
-  cursor: pointer;
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 4rem;
-  height: 4rem;
-  border: none;
-  background: none;
-  justify-content: center;
-}
-
-.arrow-button div {
-  position: relative;
-  width: 4rem;
-  height: 5rem;
-}
-
-.arrow-button .fg,
-.arrow-button .bg {
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-}
-
-.arrow-button .fg {
-  fill: var(--white);
-  transition: top 0.2s ease-in-out;
-  top: 1rem;
-}
-
-.arrow-button .bg {
-  fill: none;
-  stroke: var(--white);
-  top: 0;
-  transform: scale(0.85);
-}
-
-a.arrow-button:hover .fg {
-  top: 0;
-  transform: scale(0.85);
 }
 
 /*--- Desktop ---*/
