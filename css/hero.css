@@ -1,4 +1,4 @@
-/*--- Mobile ---*/
+/*--- MOBILE ---*/
 
 .hero section {
   width: 100%;
@@ -42,7 +42,7 @@
   height: 13rem;
 }
 
-/*--- Desktop ---*/
+/*--- DESKTOP ---*/
 
 @media screen and (min-width: 1040px) {
   .hero-content {
