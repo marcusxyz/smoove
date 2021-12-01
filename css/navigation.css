@@ -24,9 +24,9 @@ div.progress {
   background-color: var(--green);
 }
 
-.shorter-nav {
+/* .shorter-nav {
   height: 50px;
-}
+} */
 
 nav.scroll {
   background-color: var(--background);
@@ -46,6 +46,13 @@ nav a {
   text-transform: uppercase;
 }
 
+.logotype {
+  display: block;
+  width: 124px;
+  height: 35px;
+  fill: var(--black);
+}
+
 nav div {
   display: none;
 }
@@ -53,7 +60,6 @@ nav div {
 nav svg {
   width: 1.5rem;
   height: 1.5rem;
-  /* fill: var(--black); */
 }
 
 /*--- Desktop ---*/
