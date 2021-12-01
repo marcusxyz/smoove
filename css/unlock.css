@@ -169,12 +169,12 @@ input:focus {
 
   .unlock-content,
   .future-content {
-    flex-direction: column;
-    justify-content: center;
-    padding: 70px;
-    margin: 0;
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    margin: 0;
   }
 
   .unlock-content {
