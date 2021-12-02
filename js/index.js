@@ -22,19 +22,17 @@ document.addEventListener('scroll', function () {
 });
 
 // Slide in unlock-content
-
 let scrollpos = window.scrollY;
 const unlock = document.querySelector('.unlock-content');
-const add_class_on_scroll = () => unlock.classList.add('left-to-right');
-const remove_class_on_scroll = () => unlock.classList.remove('left-to-right');
+const addClassOnScroll = () => unlock.classList.add('left-to-right');
+const removeClassOnScroll = () => unlock.classList.remove('left-to-right');
 
 window.addEventListener('scroll', function () {
   scrollpos = window.scrollY;
-
   if (scrollpos >= 500) {
-    add_class_on_scroll();
+    addClassOnScroll();
   } else {
-    remove_class_on_scroll();
+    removeClassOnScroll();
   }
 });
 
@@ -45,43 +43,56 @@ const neverTravelAloneP = document.querySelector('#first-p');
 const addTravelSlide = () => neverTravelAlone.classList.add('left-to-right');
 const addTravelSlideP = () =>
   neverTravelAloneP.classList.add('left-to-right-2');
-const removeTravelSlide = () =>
-  neverTravelAlone.classList.remove('left-to-right');
-const removeTravelSlideP = () =>
-  neverTravelAloneP.classList.remove('left-to-right-2');
 
 window.addEventListener('scroll', function () {
   scrollpos = window.scrollY;
+  console.log(scrollpos);
   if (scrollpos >= 1150) {
     addTravelSlide();
     addTravelSlideP();
   }
 });
 
-// Scroll to Anchor
+// Slide in EFFORTLESS MOVEMENT
+const effortlessMovement = document.querySelector('#second-h3');
+const effortlessMovementP = document.querySelector('#second-p');
+const addEffortless = () => effortlessMovement.classList.add('right-to-left');
+const addEffortlessP = () =>
+  effortlessMovementP.classList.add('right-to-left-2');
 
-const scrollTo = () => {
+window.addEventListener('scroll', function () {
+  scrollpos = window.scrollY;
+  if (scrollpos >= 1650) {
+    addEffortless();
+    addEffortlessP();
+  }
+})(
+  // Vanilla JavaScript Scroll to Anchor
+  // @ https://perishablepress.com/vanilla-javascript-scroll-anchor/
+
+  function () {
+    scrollTo();
+  }
+)();
+
+function scrollTo() {
   const links = document.querySelectorAll('.scroll');
   links.forEach((each) => (each.onclick = scrollAnchors));
 }
 
-const scrollAnchors = (e, respond = null) => {
+function scrollAnchors(e, respond = null) {
   const distanceToTop = (el) => Math.floor(el.getBoundingClientRect().top);
   e.preventDefault();
-
-  const targetID = respond
+  var targetID = respond
     ? respond.getAttribute('href')
     : this.getAttribute('href');
-
   const targetAnchor = document.querySelector(targetID);
   if (!targetAnchor) return;
-
   const originalTop = distanceToTop(targetAnchor);
   window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-
   const checkIfDone = setInterval(function () {
-    const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-
+    const atBottom =
+      window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
     if (distanceToTop(targetAnchor) === 0 || atBottom) {
       targetAnchor.tabIndex = '-1';
       targetAnchor.focus();
@@ -89,5 +100,4 @@ const scrollAnchors = (e, respond = null) => {
       clearInterval(checkIfDone);
     }
   }, 100);
-
 }
