@@ -31,7 +31,7 @@ const remove_class_on_scroll = () => unlock.classList.remove('left-to-right');
 window.addEventListener('scroll', function () {
   scrollpos = window.scrollY;
 
-  if (scrollpos >= 300) {
+  if (scrollpos >= 500) {
     add_class_on_scroll();
   } else {
     remove_class_on_scroll();
@@ -61,36 +61,36 @@ window.addEventListener('scroll', function () {
   }
 });
 
-
-
-
 // Vanilla JavaScript Scroll to Anchor
 // @ https://perishablepress.com/vanilla-javascript-scroll-anchor/
 
-(function() {
-	scrollTo();
+(function () {
+  scrollTo();
 })();
 
 function scrollTo() {
-	const links = document.querySelectorAll('.scroll');
-	links.forEach(each => (each.onclick = scrollAnchors));
+  const links = document.querySelectorAll('.scroll');
+  links.forEach((each) => (each.onclick = scrollAnchors));
 }
 
 function scrollAnchors(e, respond = null) {
-	const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-	e.preventDefault();
-	var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
-	const targetAnchor = document.querySelector(targetID);
-	if (!targetAnchor) return;
-	const originalTop = distanceToTop(targetAnchor);
-	window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-	const checkIfDone = setInterval(function() {
-		const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-		if (distanceToTop(targetAnchor) === 0 || atBottom) {
-			targetAnchor.tabIndex = '-1';
-			targetAnchor.focus();
-			window.history.pushState('', '', targetID);
-			clearInterval(checkIfDone);
-		}
-	}, 100);
+  const distanceToTop = (el) => Math.floor(el.getBoundingClientRect().top);
+  e.preventDefault();
+  var targetID = respond
+    ? respond.getAttribute('href')
+    : this.getAttribute('href');
+  const targetAnchor = document.querySelector(targetID);
+  if (!targetAnchor) return;
+  const originalTop = distanceToTop(targetAnchor);
+  window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+  const checkIfDone = setInterval(function () {
+    const atBottom =
+      window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+    if (distanceToTop(targetAnchor) === 0 || atBottom) {
+      targetAnchor.tabIndex = '-1';
+      targetAnchor.focus();
+      window.history.pushState('', '', targetID);
+      clearInterval(checkIfDone);
+    }
+  }, 100);
 }
