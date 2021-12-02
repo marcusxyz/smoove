@@ -108,6 +108,7 @@ main {
 }
 
 a {
+  font-family: var(--medium);
   text-decoration: none;
   color: var(--black);
 }
@@ -164,6 +165,7 @@ section {
 
 /* arrow button */
 
+/* Hidden on mobile */
 .arrow-button {
   display: none;
 }

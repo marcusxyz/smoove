@@ -29,14 +29,20 @@ nav.scroll svg {
   fill: var(--white);
 }
 
-nav a {
+nav li a {
   font-size: var(--p);
   color: var(--black);
   text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
 }
 
-nav a:hover {
-  color: white;
+nav li a:hover {
+  border-bottom: 2px solid var(--black);
+}
+
+nav.scroll li a:hover {
+  border-bottom: 2px solid var(--white);
 }
 
 .logotype {
