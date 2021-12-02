@@ -5,7 +5,7 @@ This is a collaboration between CG21, DD21 and WU21 with the purpose of building
 <br>
 - Designed by Sami & Madde
 - Images rendered by Ella, Olle & Zeinab
-- Website developed by [Susanne](https://github.com/s0wie) & [Marcus](https://github.com/marcusxyz).
+- Website developed by [Susanne](https://github.com/s0wie) & [Marcus](https://github.com/marcusxyz)
 
 ## Programming languages used
 - HTML
