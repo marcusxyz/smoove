@@ -165,48 +165,55 @@ section {
 /* arrow button */
 
 .arrow-button {
-  display: block;
-  cursor: pointer;
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 4rem;
-  height: 4rem;
-  border: none;
-  background: none;
-  justify-content: center;
+  display: none;
 }
 
-.arrow-button div {
-  position: relative;
-  width: 4rem;
-  height: 5rem;
+@media screen and (min-width: 1040px) {
+  .arrow-button {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background: none;
+    justify-content: center;
+  }
+
+  .arrow-button div {
+    position: relative;
+    width: 4rem;
+    height: 5rem;
+  }
+
+  .arrow-button .fg,
+  .arrow-button .bg {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .arrow-button .fg {
+    fill: var(--white);
+    transition: top 0.2s ease-in-out;
+    top: 1rem;
+    animation: pulse 1.75s ease infinite;
+  }
+
+  .arrow-button .bg {
+    fill: none;
+    stroke: var(--white);
+    top: 0;
+    transform: scale(0.85);
+  }
+
+  a.arrow-button:hover .fg {
+    top: 0;
+    transform: scale(0.85);
+    animation: none;
+  }
 }
 
-.arrow-button .fg,
-.arrow-button .bg {
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-}
-
-.arrow-button .fg {
-  fill: var(--white);
-  transition: top 0.2s ease-in-out;
-  top: 1rem;
-	animation: pulse 1.75s ease infinite;
-}
-
-.arrow-button .bg {
-  fill: none;
-  stroke: var(--white);
-  top: 0;
-  transform: scale(0.85);
-}
-
-a.arrow-button:hover .fg {
-  top: 0;
-  transform: scale(0.85);
-  animation: none;
-}
