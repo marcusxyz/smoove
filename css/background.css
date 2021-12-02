@@ -27,9 +27,9 @@
   height: 1474px;
   transform: rotate(45deg);
   position: absolute;
-  top: 75vh;
+  top: 78vh;
   z-index: -2;
-  right: -1190px;
+  right: -2000px;
   mix-blend-mode: difference;
 }
 
@@ -45,9 +45,9 @@
   height: 1474px;
   transform: rotate(45deg);
   position: absolute;
-  top: 75vh;
+  top: 78vh;
   z-index: 1;
-  right: -1190px;
+  right: -2000px;
 }
 
 /* Black triangle for correct blending */
@@ -61,9 +61,9 @@
   height: 1474px;
   transform: rotate(45deg);
   position: absolute;
-  top: 75vh;
+  top: 78vh;
   z-index: -5;
-  right: -1190px;
+  right: -2000px;
 }
 
 @media screen and (min-width: 400px) {
