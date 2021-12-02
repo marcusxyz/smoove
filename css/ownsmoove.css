@@ -94,9 +94,35 @@
     line-height: 1.8rem;
   }
 
-  .right-to-left {
+  .right-to-left,
+  .right-to-left-2 {
+    animation-name: right-to-left;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
   }
 
+  .right-to-left-2 {
+    animation-delay: 0.2s;
+  }
+
+  #second-h3 {
+    position: absolute;
+    top: 7rem;
+    left: -1000px;
+    width: 100%;
+    color: var(--white);
+  }
+
+  #second-p {
+    position: absolute;
+    top: 12rem;
+    width: 85%;
+    left: -1000px;
+    color: var(--white);
+    padding-bottom: 1.5rem;
+    line-height: 1.8rem;
+  }
   .ownsmoove-img {
     width: 60%;
     min-height: 375px;
