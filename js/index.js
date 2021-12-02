@@ -36,6 +36,22 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// Slide in Design your future
+const future = document.querySelector('.future-content');
+const addClassOnScroll2 = () =>
+  future.classList.add('future-content-animation');
+const removeClassOnScroll2 = () =>
+  future.classList.remove('future-content-animation');
+
+window.addEventListener('scroll', function () {
+  scrollpos = window.scrollY;
+  if (scrollpos >= 3300) {
+    addClassOnScroll2();
+  } else {
+    removeClassOnScroll2();
+  }
+});
+
 // Slide in NEVER TRAVEL ALONE
 
 const neverTravelAlone = document.querySelector('#first-h3');
