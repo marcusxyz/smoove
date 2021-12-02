@@ -33,6 +33,8 @@ window.addEventListener('scroll', function () {
 
   if (scrollpos >= 500) {
     add_class_on_scroll();
+  } else {
+    remove_class_on_scroll();
   }
 });
 
