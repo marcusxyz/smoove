@@ -173,8 +173,8 @@ input:focus {
     flex: 50%;
   }
 
-  .unlock-img img{
-    height: 848px;
+  .unlock-img img {
+    height: 750px;
     object-position: bottom;
   }
 
@@ -191,10 +191,10 @@ input:focus {
   .unlock-content {
     position: absolute;
     width: 50%;
-    min-height: 848px;
+    min-height: 750px;
     padding: 8rem;
     right: -1000px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--background);
   }
 
   .unlock-content-animation {

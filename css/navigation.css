@@ -13,9 +13,9 @@ nav {
   vertical-align: middle;
 }
 
-/* .shorter-nav {
-  height: 50px;
-} */
+.shorter-nav {
+  height: 60px;
+}
 
 nav.scroll {
   background-color: var(--background);
@@ -33,6 +33,10 @@ nav a {
   font-size: var(--p);
   color: var(--black);
   text-transform: uppercase;
+}
+
+nav a:hover {
+  color: white;
 }
 
 .logotype {

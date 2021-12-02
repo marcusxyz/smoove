@@ -31,7 +31,7 @@ const remove_class_on_scroll = () => unlock.classList.remove('left-to-right');
 window.addEventListener('scroll', function () {
   scrollpos = window.scrollY;
 
-  if (scrollpos >= 200) {
+  if (scrollpos >= 300) {
     add_class_on_scroll();
   } else {
     remove_class_on_scroll();
@@ -52,7 +52,7 @@ const removeTravelSlideP = () =>
 
 window.addEventListener('scroll', function () {
   scrollpos = window.scrollY;
-  if (scrollpos >= 1000) {
+  if (scrollpos >= 1150) {
     addTravelSlide();
     addTravelSlideP();
   } else {

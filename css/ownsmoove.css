@@ -74,16 +74,16 @@
     position: relative;
   }
 
-  .ownsmoove-content #first-h3 {
+  #first-h3 {
     position: absolute;
-    top: 8rem;
+    top: 7rem;
     width: 85%;
     padding-right: 3rem;
     right: -1000px;
     color: var(--white);
   }
 
-  .ownsmoove-content #first-p {
+  #first-p {
     position: absolute;
     top: 12rem;
     width: 85%;
