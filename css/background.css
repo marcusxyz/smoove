@@ -29,7 +29,7 @@
   position: absolute;
   top: 75vh;
   z-index: -2;
-  right: -1135px;
+  right: -1190px;
   mix-blend-mode: difference;
 }
 
@@ -47,7 +47,7 @@
   position: absolute;
   top: 75vh;
   z-index: 1;
-  right: -1135px;
+  right: -1190px;
 }
 
 /* Black triangle for correct blending */
@@ -63,5 +63,19 @@
   position: absolute;
   top: 75vh;
   z-index: -5;
-  right: -1135px;
+  right: -1190px;
+}
+
+@media screen and (min-width: 400px) {
+  .green-triangle {
+    right: -1135px;
+  }
+
+  .green-triangle-2 {
+    right: -1135px;
+  }
+
+  .black-triangle {
+    right: -1135px;
+  }
 }

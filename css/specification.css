@@ -101,7 +101,6 @@
 }
 .specs-item .part-1 {
   display: inline-block;
-  /* border: 2px solid white; */
   padding: 1rem;
 }
 
@@ -160,6 +159,14 @@
     display: none;
   }
 
+  /* .specs-item-container-2 {
+    width: 100%;
+    display: flex;
+  } */
+
+  .specs-item .part-1 {
+    border: 2px solid white;
+  }
   .specs-item {
     flex-direction: column;
   }

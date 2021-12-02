@@ -9,7 +9,6 @@ window.onscroll = () => {
 // Slide in unlock-content
 let scrollpos = window.scrollY;
 const unlock = document.querySelector('.unlock-content');
-
 const add_class_on_scroll = () => unlock.classList.add('left-to-right');
 const remove_class_on_scroll = () => unlock.classList.remove('left-to-right');
 
@@ -21,12 +20,6 @@ window.addEventListener('scroll', function () {
   } else {
     remove_class_on_scroll();
   }
-
-  if (scrollpos >= 1750) {
-    remove_class_on_scroll();
-  }
-
-  console.log(scrollpos);
 });
 
 // Slide in NEVER TRAVEL ALONE
