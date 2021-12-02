@@ -47,7 +47,7 @@
 
 .unlock-container {
   width: 100%;
-  min-height: 600px;
+  min-height: 37.5rem;
   padding-left: 0;
   padding-right: 0;
   display: flex;
@@ -57,7 +57,7 @@
 
 .future-container {
   width: 100%;
-  min-height: 750px;
+  min-height: 47rem;
   padding-left: 0;
   padding-right: 0;
   display: flex;
@@ -87,7 +87,7 @@
 .unlock-img img,
 .future-img img {
   width: 100%;
-  height: 343px;
+  height: 21rem;
   overflow: hidden;
   object-fit: cover;
   object-position: left;
@@ -98,7 +98,7 @@
 .future-content {
   background-color: var(--background);
   padding: 3rem 1.5rem;
-  min-height: 375px;
+  min-height: 24rem;
   margin: 2rem 1rem;
 }
 
@@ -182,7 +182,7 @@ input:focus {
   }
 
   .unlock-img img {
-    height: 750px;
+    height: 47rem;
     object-position: bottom;
   }
 
@@ -199,7 +199,7 @@ input:focus {
   .unlock-content {
     position: absolute;
     width: 50%;
-    min-height: 750px;
+    min-height: 47rem;
     padding: 8rem;
     right: -1000px;
     background-color: var(--background);
