@@ -10,7 +10,7 @@ This is a collaboration between CG21, DD21 and WU21 with the purpose of building
 ## Programming languages used
 - HTML
 - CSS
-- Javascript
+- JavaScript
 
 ## Installation
 
