@@ -1,3 +1,5 @@
+/*--- MOBILE ---*/
+
 nav {
   position: fixed;
   width: 100%;
@@ -14,7 +16,7 @@ nav {
 }
 
 .shorter-nav {
-  height: 60px;
+  height: 4rem;
 }
 
 nav.scroll {
@@ -47,8 +49,8 @@ nav.scroll li a:hover {
 
 .logotype {
   display: block;
-  width: 124px;
-  height: 35px;
+  width: 7.75rem;
+  height: 3.25rem;
   fill: var(--black);
 }
 
@@ -65,7 +67,7 @@ nav svg {
 
 @media screen and (min-width: 1040px) {
   nav {
-    height: 80px;
+    height: 5rem;
     padding: 1.5rem 4rem;
   }
 

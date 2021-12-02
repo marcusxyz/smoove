@@ -1,6 +1,8 @@
+/*--- Mobile ---*/
+
 .ownsmoove-container {
   width: 100%;
-  min-height: 750px;
+  min-height: 46.875rem;
   padding-left: 0;
   padding-right: 0;
   display: flex;
@@ -11,7 +13,7 @@
 .ownsmoove-content {
   background-color: rgba(19, 24, 19, 1);
   padding: 3rem 1.5rem;
-  min-height: 375px;
+  min-height: 24rem;
   margin: 2rem 1rem;
 }
 
