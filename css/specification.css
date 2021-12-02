@@ -101,17 +101,17 @@
 }
 .specs-item .part-1 {
   display: inline-block;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   padding: 1rem;
 }
 
-.specs-item .part-2 {
-  padding-right: 40%;
-}
-
 .specs-item-container-2 {
+  width: 70%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  align-content: space-between;
   padding: 1.5rem 1.5rem 4rem 1.5rem;
 }
 
@@ -162,6 +162,11 @@
 
   .specs-item {
     flex-direction: column;
+  }
+
+  .specs-item .part-1 {
+    border: 2px solid var(--white);
+    margin-bottom: 0.5rem;
   }
 
   .specs-item .part-2 {

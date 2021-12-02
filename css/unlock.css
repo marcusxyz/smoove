@@ -1,3 +1,14 @@
+@keyframes show-content {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+
+/*--- MOBILE ---*/
+
 .section-title {
   position: relative;
   height: 103px;
@@ -130,7 +141,7 @@ input:focus {
   text-align: center;
 }
 
-/* DESKTOP */
+/*--- DESKTOP ---*/
 
 @media screen and (min-width: 1040px) {
   .section-title {
@@ -181,6 +192,7 @@ input:focus {
     position: absolute;
     width: 50%;
     min-height: 848px;
+    padding: 8rem;
     right: -1000px;
     background-color: rgba(0, 0, 0, 0.8);
   }
@@ -201,15 +213,6 @@ input:focus {
 
   .left-to-right-2 {
     animation-delay: 0.2s;
-  }
-
-  @keyframes show-content {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-1000px);
-    }
   }
 
   .unlock-content h3,

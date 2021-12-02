@@ -6,6 +6,7 @@
   --black: #000;
   --green: #22cf7a;
   --orange: #f88600;
+  --button-hover: #E47E05;
   --background: #131813;
 
   /* Fonts */
@@ -26,7 +27,7 @@
   --p-large: 1.125rem;
 }
 
-/* @fontface */
+/*--- TYPEFACE ---*/
 
 @font-face {
   font-family: Sora-Bold;
@@ -53,6 +54,29 @@
   src: url(../fonts/Sora-Light.woff2);
 }
 
+/*--- KEYFRAMES ---*/
+
+@keyframes pulse {
+  0% {
+    /* position: absolute;
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.2);
+    box-shadow: 0 0 0 0 rgba(255,255,255, 0.2);
+    transform: rotate(90deg); */
+    transform: translateY(0.3125rem);
+  }
+  60% {
+
+      /* -moz-box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+      box-shadow: 0 0 0 10px rgba(255,255,255, 0); */
+      transform: translateY(0);
+  }
+  100% {
+      /* -moz-box-shadow: 0 0 0 0 rgba(255,255,225, 0);
+      box-shadow: 0 0 0 0 rgba(255,255,255, 0); */
+      transform: translateY(0.3125rem);
+  }
+}
+
 /*--- GENERAL ---*/
 
 * {
@@ -69,6 +93,22 @@ body {
   font-family: var(--regular);
   background-color: var(--background);
   color: var(--white);
+}
+
+/* Progress bar acts as scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Progress bar */
+
+div.progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.125rem;
+  background-color: var(--green);
 }
 
 main {
@@ -124,6 +164,11 @@ section {
   background-color: var(--orange);
   color: var(--white);
   padding: 1rem 1.5rem;
+  transition: 0.2s;
+}
+
+.primary-button:hover {
+  background-color: var(--button-hover);
 }
 
 /* arrow button */
@@ -159,6 +204,7 @@ section {
   fill: var(--white);
   transition: top 0.2s ease-in-out;
   top: 1rem;
+	animation: pulse 1.75s ease infinite;
 }
 
 .arrow-button .bg {
@@ -171,4 +217,5 @@ section {
 a.arrow-button:hover .fg {
   top: 0;
   transform: scale(0.85);
+  animation: none;
 }

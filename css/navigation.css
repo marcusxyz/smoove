@@ -13,17 +13,6 @@ nav {
   vertical-align: middle;
 }
 
-/* Progress bar */
-
-div.progress {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0.125rem;
-  background-color: var(--green);
-}
-
 /* .shorter-nav {
   height: 50px;
 } */
